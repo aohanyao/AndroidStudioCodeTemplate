@@ -1,13 +1,11 @@
 package ${packageName}.view.activity
 
-import ${applicationPackage}.R
 import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.td.framework.mvp.base.MvpLoadListDataBaseActivity
-import kotlinx.android.synthetic.main.content_user_list.*
-import kotlinx.android.synthetic.main.${layoutName}.*
+import kotlinx.android.synthetic.main.${simpleLayoutName}.*
 import ${packageName}.presenter.${presenterClass}
 import ${packageName}.view.adapter.${AdapterClass}
 import ${BeanPackageName}.${BeanClass}

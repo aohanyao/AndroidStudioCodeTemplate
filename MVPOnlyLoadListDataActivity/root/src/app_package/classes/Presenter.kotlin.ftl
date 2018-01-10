@@ -1,5 +1,6 @@
 package ${packageName}.presenter
 
+import com.td.framework.model.bean.ListDataModel
 import com.td.framework.mvp.contract.GeneralLoadDataContract
 import com.td.framework.mvp.presenter.LoadDataListPresenter
 import ${ParamPackageName}.${ParamClass}

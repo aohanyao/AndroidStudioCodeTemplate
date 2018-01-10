@@ -9,4 +9,4 @@ import com.td.framework.mvp.model.BaseParamsInfo
  * Description:${activityTitle}的参数类
  * ChangeLog:
  */
-data class ${ParamClass}():BaseParamsInfo
+class ${ParamClass}():BaseParamsInfo

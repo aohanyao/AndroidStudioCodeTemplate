@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <globals>
 
-    <#--include "common_globals.xml.ftl" />-->
-    <global id="hasNoActionBar" type="boolean" value="false" />
+   
     <global id="parentActivityClass" value="" />
 
     <global id="excludeMenu" type="boolean" value="true" />
