@@ -1,0 +1,39 @@
+<#import "../values/manifest_strings.xml.ftl" as manifestMacros>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}">
+  <#-- 将一些东西替换成了 自己的页面  样式等 -->
+    <android.support.design.widget.AppBarLayout
+            style="@style/AppBarLayoutStyle"
+            app:elevation="@dimen/elevation_somthing">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    style="@style/mToolbarStyle"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                    <TextView
+                      style="@style/ToolBarNavTextStyle"
+                      android:text="@string/call_back"/>
+
+                  <TextView
+                      style="@style/ToolBarTitleStyle"
+                      android:text="@string/title_${activityToLayout(activityClass)}"/>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_toolbar_line"/>
+        </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/${simpleLayoutName}"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
