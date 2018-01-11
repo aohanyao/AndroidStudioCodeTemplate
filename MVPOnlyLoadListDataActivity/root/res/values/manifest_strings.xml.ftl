@@ -1,3 +1,3 @@
 <resources>
-    <string name="title_${activityToLayout(activityClass)}">${escapeXmlString(activityTitle)}</string>
+    <string name="title_${activityToLayout(activityClass)}">${activityTitle}</string>
 </resources>

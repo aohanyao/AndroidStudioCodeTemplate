@@ -2,12 +2,12 @@
 <globals>
 
 
-    <global id="parentActivityClass" value="" />
+    <global id="parentfragmentClass" value="" />
 
     <global id="excludeMenu" type="boolean" value="true" />
-    <global id="generateActivityTitle" type="boolean" value="false" />
-    <global id="simpleLayoutName" value="${contentLayoutName}" />
-    <global id="appBarLayoutName" value="${layoutName}" />
+    <global id="generatefragmentTitle" type="boolean" value="false" />
+    <global id="simpleLayoutName" value="${layoutName}" />
+
     <#-- 拆分路径 -->
     <global id="rootOut" value="${srcOut?substring(0,srcOut?index_of("java")+4)}"/>
     <global id="srcParam" value="${srcOut}/${slashedPackageName(packageName)}"/>
