@@ -7,7 +7,7 @@
         minBuildApi="14"
         description="创建一个有app bar的activity">
 
-    <category value="Customize Activity"/>
+    <category value="MVP Activity"/>
     <formfactor value="Mobile"/>
 
     <parameter

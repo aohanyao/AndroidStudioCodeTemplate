@@ -2,10 +2,10 @@
 <template
     format="2"
     revision="2"
-    name="MVP List Data Fragment"
+    name="MVP Request Data Fragment"
     minApi="7"
     minBuildApi="14"
-    description="专门用来加载列表数据的MVP Fragment">
+    description="MVP Fragment">
 
     <category value="MVP Fragment" />
     <formfactor value="Mobile" />
@@ -16,30 +16,30 @@
         type="string"
         constraints="class|nonempty|unique"
         default="BlankFragment"
-        help="Fragment类名" />
+        help="Fragment Name" />
 
     <parameter
         id="layoutName"
-        name="布局名称"
+        name="layout Name"
         type="string"
         constraints="layout|unique|nonempty"
         suggest="fragment_${classToResource(fragmentClass)}"
-        default="activity_main"
-        help="布局名称" />
+        default="fragment_blank"
+        help="layout Name" />
 
 
     <parameter
             id="fragmentTitle"
-            name="标题"
+            name="fragment Title"
             type="string"
             constraints="nonempty"
             default="MainActivity"
             suggest="${fragmentClass}"
-            help="Activity的标题"/>
+            help="Fragment title or description"/>
 
     <parameter
         id="packageName"
-        name="包名"
+        name="package Name"
         type="string"
         constraints="package"
         default="com.mycompany.myapp" />
@@ -53,29 +53,25 @@
         constraints="class|nonempty|unique"
         default="MainPresenter"
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Presenter"
-        help="Presenter的名字" />
+        help="Presenter Name" />
 
 
     <parameter
         id="ParamClass"
-        name="参数实体"
+        name="Param Class"
         type="string"
         constraints="class|nonempty|unique"
         default="MainParam"
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Parm"
-        help="参数名字" />
+        help="Param Class" />
 
     <parameter
         id="ParamPackageName"
-        name="参数包名"
+        name="Param Package Name"
         type="string"
         constraints="package"
         default="com.yida.cloud.client.model.param"
-        help="参数包名" />
-
-
-
-
+        help="create in the package" />
 
 
 
@@ -90,57 +86,20 @@
         constraints="class|nonempty|unique"
         default="MainBean"
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Bean"
-        help="数据实体类的名字" />
+        help="Bean Name" />
 
 
     <parameter
         id="BeanPackageName"
-        name="Bean package name"
+        name="Bean package"
         type="string"
         constraints="package"
-        help="实体类存放的位置"
+        help="Bean package"
         default="com.yida.cloud.client.model.bean" />
         <!-- 实体类存放的位置-->
 
 
 
-
-
-    <parameter
-        id="AdapterClass"
-        name="Adapter Name"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainAdapter"
-        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Adapter"
-        help="适配器的名字" />
-
-
-
-
-
-    <parameter
-        id="listLayoutName"
-        name="List item Name"
-        type="string"
-        constraints="layout|unique|nonempty"
-        default="list_${classToResource(fragmentClass)}"
-        help="适配器item布局名称" />
-
-      <parameter
-          id="refreshLayout"
-          name="刷新布局ID"
-          type="string"
-          constraints="layout|unique|nonempty"
-          default="rl_${classToResource(fragmentClass)}"
-          help="刷新布局ID" />
-      <parameter
-          id="recyclerView"
-          name="RecyclerView ID"
-          type="string"
-          constraints="layout|unique|nonempty"
-          default="rv_${classToResource(fragmentClass)}"
-          help="RecyclerView ID" />
 
     <globals file="globals.xml.ftl" />
     <execute file="recipe.xml.ftl" />

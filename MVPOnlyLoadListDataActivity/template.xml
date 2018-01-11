@@ -7,7 +7,7 @@
     minBuildApi="14"
     description="专门用来加载列表数据的MVP Activity">
 
-    <category value="Customize Activity" />
+    <category value="MVP Activity" />
     <formfactor value="Mobile" />
 
     <parameter
