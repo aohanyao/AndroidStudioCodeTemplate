@@ -17,7 +17,7 @@
                 android:layout_height="wrap_content">
 
                 <android.support.v7.widget.Toolbar
-                    style="@style/mToolbarStyle"
+                    style="@style/BaseToolbarStyle"
                     app:popupTheme="@style/AppTheme.PopupOverlay" />
 
                     <TextView
