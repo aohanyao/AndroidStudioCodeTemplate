@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<template
+    format="2"
+    revision="2"
+    name="MVP Rquest Data Activity"
+    minApi="7"
+    minBuildApi="14"
+    description="MVP Activity">
+
+    <category value="MVP Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="activityClass"
+        name="Activity名称"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${layoutToActivity(layoutName)}"
+        default="MainActivity"
+        help="Activity类名" />
+
+    <parameter
+        id="layoutName"
+        name="布局名称"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${activityToLayout(activityClass)}"
+        default="activity_main"
+        help="布局名称" />
+
+
+    <parameter
+            id="activityTitle"
+            name="标题"
+            type="string"
+            constraints="nonempty"
+            default="MainActivity"
+            suggest="${activityClass}"
+            help="Activity的标题"/>
+
+    <parameter
+        id="packageName"
+        name="包名"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <parameter
+              id="contentLayoutName"
+              name="Content Layout Name"
+              type="string"
+              constraints="layout|unique"
+              suggest="${activityToLayout(activityClass, 'content')}"
+              default="content_main"
+              visibility="false"
+              help="The name of the App Bar layout to create for the activity"/>
+
+
+    <parameter
+        id="presenterClass"
+        name="Presenter Name"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="MainPresenter"
+        suggest="${underscoreToCamelCase(classToResource(activityClass))}Presenter"
+        help="Presenter的名字" />
+
+
+    <parameter
+        id="ParamClass"
+        name="参数实体"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="MainParam"
+        suggest="${underscoreToCamelCase(classToResource(activityClass))}Parm"
+        help="参数名字" />
+
+    <parameter
+        id="ParamPackageName"
+        name="参数包名"
+        type="string"
+        constraints="package"
+        default="com.yida.cloud.client.model.param"
+        help="参数包名" />
+
+
+
+
+
+
+
+
+
+
+
+    <parameter
+        id="BeanClass"
+        name="Bean Name"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="MainBean"
+        suggest="${underscoreToCamelCase(classToResource(activityClass))}Bean"
+        help="数据实体类的名字" />
+
+
+    <parameter
+        id="BeanPackageName"
+        name="Bean package name"
+        type="string"
+        constraints="package"
+        help="实体类存放的位置"
+        default="com.yida.cloud.client.model.bean" />
+        <!-- 实体类存放的位置-->
+
+
+
+
+
+    <parameter
+        id="AdapterClass"
+        name="Adapter Name"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="MainAdapter"
+        suggest="${underscoreToCamelCase(classToResource(activityClass))}Adapter"
+        help="适配器的名字" />
+
+
+
+
+
+    <parameter
+        id="listLayoutName"
+        name="List item Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="list_${classToResource(activityClass)}"
+        help="适配器item布局名称" />
+
+      <parameter
+          id="isImmersive"
+          name="是否全屏沉浸"
+          type="boolean"
+          default="false"
+          help="如果是:状态栏将会更为图片渐变沉浸。如果否:使用统一的颜色进行沉浸。"/>
+
+      <parameter
+          id="refreshLayout"
+          name="刷新布局ID"
+          type="string"
+          constraints="layout|unique|nonempty"
+          default="rl_${classToResource(activityClass)}"
+          help="刷新布局ID" />
+      <parameter
+          id="recyclerView"
+          name="RecyclerView ID"
+          type="string"
+          constraints="layout|unique|nonempty"
+          default="rv_${classToResource(activityClass)}"
+          help="RecyclerView ID" />
+          <parameter
+                  id="modlueName"
+                  name="Modlue Name"
+                  type="string"
+                  default=""
+                  help="模块名称，主要用来创建资源的时候命名。"/>
+
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
