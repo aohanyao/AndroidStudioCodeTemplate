@@ -7,7 +7,11 @@
                 <#if isNewProject>
                     android:label="@string/app_name"
                 <#else>
-                    android:label="@string/title_${activityToLayout(activityClass)}"
+                    <#if modlueName?length gt 1>
+                      android:label="@string/title_${activityToLayout(activityClass)}_${modlueName}"
+                    <#else>
+                      android:label="@string/title_${activityToLayout(activityClass)}"
+                    </#if>
                 </#if>
             </#if>
             <#-- 这里修改了主题样式 -->

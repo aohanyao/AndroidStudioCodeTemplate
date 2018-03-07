@@ -72,7 +72,7 @@
         type="string"
         constraints="class|nonempty|unique"
         default="MainParam"
-        suggest="${underscoreToCamelCase(classToResource(activityClass))}Parm"
+        suggest="${underscoreToCamelCase(classToResource(activityClass))}Param"
         help="参数名字" />
 
     <parameter
@@ -137,13 +137,7 @@
         default="list_${classToResource(activityClass)}"
         help="适配器item布局名称" />
 
-      <parameter
-          id="isImmersive"
-          name="是否全屏沉浸"
-          type="boolean"
-          default="false"
-          help="如果是:状态栏将会更为图片渐变沉浸。如果否:使用统一的颜色进行沉浸。"/>
-
+   
       <parameter
           id="refreshLayout"
           name="刷新布局ID"
@@ -158,6 +152,13 @@
           constraints="layout|unique|nonempty"
           default="rv_${classToResource(activityClass)}"
           help="RecyclerView ID" />
+          <parameter
+                  id="modlueName"
+                  name="Modlue Name"
+                  type="string"
+                  default=""
+                  help="模块名称，主要用来创建资源的时候命名。"/>
+
 
     <globals file="globals.xml.ftl" />
     <execute file="recipe.xml.ftl" />

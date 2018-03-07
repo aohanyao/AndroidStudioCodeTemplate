@@ -56,8 +56,7 @@
             suggest="${activityToLayout(activityClass)}"
             default="activity_main"
             help="The name of the layout to create for the activity"/>
-
-
+   
     <parameter
             id="activityTitle"
             name="Title"

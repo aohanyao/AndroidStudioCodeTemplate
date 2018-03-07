@@ -4,8 +4,6 @@
     <#include "recipe_simple.xml.ftl" />
     <#include "recipe_list.xml.ftl" />
     <#include "recipe_app_bar.xml.ftl" />
-    <merge from="AndroidManifest.xml.ftl" to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
-
 
     <instantiate from="src/app_package/classes/Activity.kotlin.ftl"
       to="${escapeXmlAttribute(srcOut)}/view/activity/${activityClass}.kt" />
@@ -26,4 +24,5 @@
       to="${escapeXmlAttribute(resOut)}/values/dimens.xml" />
 
     <open file="${escapeXmlAttribute(srcOut)}/view/activity/${activityClass}.kt"/>
+    <open file="${escapeXmlAttribute(srcOut)}/view/adapter/${AdapterClass}.kt"/>
 </recipe>

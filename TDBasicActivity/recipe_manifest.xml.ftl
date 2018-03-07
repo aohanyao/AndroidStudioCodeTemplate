@@ -1,4 +1,4 @@
-<recipe folder="root://activities/common">
+<recipe folder="root://activities/TDBasicActivity">
 
     <merge from="root/AndroidManifest.xml.ftl"
            to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />

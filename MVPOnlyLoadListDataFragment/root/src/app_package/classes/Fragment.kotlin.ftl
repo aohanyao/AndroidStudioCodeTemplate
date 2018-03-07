@@ -1,4 +1,4 @@
-package ${packageName}.view.activity
+package ${packageName}.view.fragment
 
 import android.os.Bundle
 import android.support.v7.widget.RecyclerView
@@ -21,18 +21,9 @@ class ${fragmentClass} : MvpLoadListDataBaseFragment<${presenterClass}, ${BeanCl
 
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-      isCreate=true
       super.onViewCreated(view, savedInstanceState)
-      mocker()
   }
 
-  /**
-   * 没有接口的时候请调用这个方法
-   */
-  private fun mocker() {
-      //模拟数据
-      showContent()
-  }
 
     override fun newP(): ${presenterClass}? {
         return ${presenterClass}(this)
@@ -47,7 +38,12 @@ class ${fragmentClass} : MvpLoadListDataBaseFragment<${presenterClass}, ${BeanCl
     }
 
     override fun getLayoutId(): Int {
-        return R.layout.${simpleLayoutName}
+      <#if modlueName?length gt 1>
+          return R.layout.${simpleLayoutName}_${modlueName}
+      <#else>
+          return R.layout.${simpleLayoutName}
+      </#if>
+
     }
     override fun getRecyclerView(): RecyclerView? {
         return ${recyclerView}

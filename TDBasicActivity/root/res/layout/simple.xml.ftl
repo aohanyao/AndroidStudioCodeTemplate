@@ -6,22 +6,13 @@
     style="@style/BaseRootLayoutStyle"
 <#if hasAppBar && appBarLayoutName??>
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/${appBarLayoutName}"
+      <#if modlueName?length gt 1>
+    tools:showIn="@layout/${appBarLayoutName}_${modlueName}"
+      <#else>
+        tools:showIn="@layout/${appBarLayoutName}"
+      </#if>
 </#if>
     tools:context="${packageName}.${activityClass}">
 
-<#if isNewProject!false>
-    <TextView
-<#if includeCppSupport!false>
-        android:id="@+id/sample_text"
-</#if>
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</#if>
+  <!--${activityTitle}CXML-->
 </LinearLayout>

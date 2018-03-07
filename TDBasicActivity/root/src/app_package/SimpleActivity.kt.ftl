@@ -9,11 +9,8 @@ import ${superClassFqcn}
 import android.view.Menu
 import android.view.MenuItem
 </#if>
-<#if applicationPackage??>
-import ${applicationPackage}.R
-</#if>
 import com.td.framework.base.view.TDBaseActivity
-
+import ${applicationPackage}.R
 import kotlinx.android.synthetic.main.${layoutName}.*
 <#if includeCppSupport!false>
 <#if useFragment!false>
@@ -32,16 +29,10 @@ class ${activityClass} : TDBaseActivity()  <#-- 继承自己的基类 --> {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.${layoutName})
-<#if hasAppBar>
-      <#if isImmersive>
-        //初始化线性变化的标题栏
-        initChangerToolbarGradientColor(R.color.colorPrimary)
-      <#else>
-          //初始化纯颜色的标题栏
-          initGeneralToolBar(R.color.colorPrimary)
-      </#if>
-</#if>
+
+          setContentView(R.layout.${layoutName})
+
+
 <#if parentActivityClass?has_content>
         ${kotlinActionBar}?.setDisplayHomeAsUpEnabled(true)
 </#if>

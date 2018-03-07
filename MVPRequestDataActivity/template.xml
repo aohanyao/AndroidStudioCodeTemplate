@@ -72,7 +72,7 @@
         type="string"
         constraints="class|nonempty|unique"
         default="MainParam"
-        suggest="${underscoreToCamelCase(classToResource(activityClass))}Parm"
+        suggest="${underscoreToCamelCase(classToResource(activityClass))}Param"
         help="参数名字" />
 
     <parameter
@@ -83,16 +83,6 @@
         default="com.yida.cloud.client.model.param"
         help="参数包名" />
 
-
-
-
-
-
-
-
-
-
-
     <parameter
         id="BeanClass"
         name="Bean Name"
@@ -102,62 +92,15 @@
         suggest="${underscoreToCamelCase(classToResource(activityClass))}Bean"
         help="数据实体类的名字" />
 
-
     <parameter
         id="BeanPackageName"
         name="Bean package name"
         type="string"
         constraints="package"
         help="实体类存放的位置"
-        default="com.yida.cloud.client.model.bean" />
+        default="${packageName}.model.bean" />
         <!-- 实体类存放的位置-->
 
-
-
-
-
-    <parameter
-        id="AdapterClass"
-        name="Adapter Name"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainAdapter"
-        suggest="${underscoreToCamelCase(classToResource(activityClass))}Adapter"
-        help="适配器的名字" />
-
-
-
-
-
-    <parameter
-        id="listLayoutName"
-        name="List item Name"
-        type="string"
-        constraints="layout|unique|nonempty"
-        default="list_${classToResource(activityClass)}"
-        help="适配器item布局名称" />
-
-      <parameter
-          id="isImmersive"
-          name="是否全屏沉浸"
-          type="boolean"
-          default="false"
-          help="如果是:状态栏将会更为图片渐变沉浸。如果否:使用统一的颜色进行沉浸。"/>
-
-      <parameter
-          id="refreshLayout"
-          name="刷新布局ID"
-          type="string"
-          constraints="layout|unique|nonempty"
-          default="rl_${classToResource(activityClass)}"
-          help="刷新布局ID" />
-      <parameter
-          id="recyclerView"
-          name="RecyclerView ID"
-          type="string"
-          constraints="layout|unique|nonempty"
-          default="rv_${classToResource(activityClass)}"
-          help="RecyclerView ID" />
           <parameter
                   id="modlueName"
                   name="Modlue Name"

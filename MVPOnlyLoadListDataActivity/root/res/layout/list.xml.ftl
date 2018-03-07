@@ -3,5 +3,5 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/BaseRootLayoutStyle">
-
+  <!--${activityTitle}LXML-->
 </LinearLayout>

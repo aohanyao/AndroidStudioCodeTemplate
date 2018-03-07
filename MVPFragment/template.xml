@@ -62,7 +62,7 @@
         type="string"
         constraints="class|nonempty|unique"
         default="MainParam"
-        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Parm"
+        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Param"
         help="Param Class" />
 
     <parameter
@@ -72,8 +72,6 @@
         constraints="package"
         default="com.yida.cloud.client.model.param"
         help="create in the package" />
-
-
 
 
 
@@ -97,6 +95,13 @@
         help="Bean package"
         default="com.yida.cloud.client.model.bean" />
         <!-- 实体类存放的位置-->
+
+        <parameter
+                id="modlueName"
+                name="Modlue Name"
+                type="string"
+                default=""
+                help="模块名称，主要用来创建资源的时候命名。"/>
 
 
 

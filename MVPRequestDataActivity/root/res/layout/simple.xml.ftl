@@ -10,7 +10,7 @@
       <#else>
     tools:showIn="@layout/${appBarLayoutName}"
       </#if>
-    tools:context="${packageName}.${activityClass}">
+    tools:context="${packageName}.view.activity.${activityClass}">
 
 
 </LinearLayout>

@@ -26,14 +26,24 @@
 
                   <TextView
                       style="@style/ToolBarTitleStyle"
-                      android:text="@string/title_${activityToLayout(activityClass)}"/>
+                      <#if modlueName?length gt 1>
+                      android:text="@string/title_${activityToLayout(activityClass)}_${modlueName}"
+                      <#else>
+                      android:text="@string/title_${activityToLayout(activityClass)}"
+                      </#if>
+                      />
             </RelativeLayout>
 
             <include layout="@layout/layout_toolbar_line"/>
         </android.support.design.widget.AppBarLayout>
 
+        <!--${activityTitle}AXML-->
+        <#if modlueName?length gt 1>
+        <include layout="@layout/${simpleLayoutName}_${modlueName}"/>
 
-    <include layout="@layout/${simpleLayoutName}"/>
+        <#else>
+        <include layout="@layout/${simpleLayoutName}"/>
+        </#if>
 
 
 </android.support.design.widget.CoordinatorLayout>

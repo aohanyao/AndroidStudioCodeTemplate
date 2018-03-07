@@ -35,7 +35,7 @@
             constraints="nonempty"
             default="MainActivity"
             suggest="${fragmentClass}"
-            help="Activity的标题"/>
+            help="Fragment的标题"/>
 
     <parameter
         id="packageName"
@@ -62,7 +62,7 @@
         type="string"
         constraints="class|nonempty|unique"
         default="MainParam"
-        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Parm"
+        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Param"
         help="参数名字" />
 
     <parameter
@@ -141,6 +141,13 @@
           constraints="layout|unique|nonempty"
           default="rv_${classToResource(fragmentClass)}"
           help="RecyclerView ID" />
+          <parameter
+                  id="modlueName"
+                  name="Modlue Name"
+                  type="string"
+                  default=""
+                  help="模块名称，主要用来创建资源的时候命名。"/>
+
 
     <globals file="globals.xml.ftl" />
     <execute file="recipe.xml.ftl" />

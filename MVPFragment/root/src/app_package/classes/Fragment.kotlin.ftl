@@ -24,7 +24,12 @@ class ${fragmentClass} : MvpRequestDataBaseFragment<${presenterClass}, ${BeanCla
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val inflate = inflateView(R.layout.${simpleLayoutName}, container)
+
+      <#if modlueName?length gt 1>
+          val inflate = inflateView(R.layout.${simpleLayoutName}_${modlueName}, container)
+      <#else>
+          val inflate = inflateView(R.layout.${simpleLayoutName}, container)
+      </#if>
         showLoading()
         return inflate
     }

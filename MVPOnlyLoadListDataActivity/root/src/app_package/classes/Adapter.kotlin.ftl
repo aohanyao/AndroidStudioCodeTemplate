@@ -2,7 +2,7 @@ package ${packageName}.view.adapter
 
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
- 
+
 import ${BeanPackageName}.${BeanClass}
 
 /**
@@ -13,7 +13,12 @@ import ${BeanPackageName}.${BeanClass}
  * ChangeLog:
  */
 class ${AdapterClass}(datas: List<${BeanClass}>) : BaseQuickAdapter<${BeanClass},
+<#if modlueName?length gt 1>
+  BaseViewHolder>(R.layout.${listLayoutName}_${modlueName}, datas) {
+<#else>
   BaseViewHolder>(R.layout.${listLayoutName}, datas) {
+</#if>
+
     override fun convert(helper: BaseViewHolder?, item: ${BeanClass}?) {
 
     }

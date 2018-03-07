@@ -5,7 +5,11 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.td.framework.mvp.base.MvpLoadListDataBaseActivity
+<#if modlueName?length gt 1>
+  import kotlinx.android.synthetic.main.${simpleLayoutName}_${modlueName}.*
+<#else>
 import kotlinx.android.synthetic.main.${simpleLayoutName}.*
+</#if>
 import ${packageName}.presenter.${presenterClass}
 import ${packageName}.view.adapter.${AdapterClass}
 import ${BeanPackageName}.${BeanClass}
@@ -15,32 +19,20 @@ import ${ParamPackageName}.${ParamClass}
  * Created on ${.now}
  * @author: jc
  * @version:1.0
- * Description:${activityTitle}
+ * Description:${activityTitle}Activity
  */
 class ${activityClass} : MvpLoadListDataBaseActivity<${presenterClass}, ${BeanClass}>() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.${layoutName})
-        <#if isImmersive>
-          //初始化线性变化的标题栏
-          initChangerToolbarGradientColor(R.color.colorPrimary)
-        <#else>
-            //初始化纯颜色的标题栏
-            initGeneralToolBar(R.color.colorPrimary)
-        </#if>
-        mocker()
+          <#if modlueName?length gt 1>
+            setContentView(R.layout.${layoutName}_${modlueName})
+          <#else>
+            setContentView(R.layout.${layoutName})
+          </#if>
     }
 
-    /**
-     * 没有接口的时候请调用这个方法
-     */
-    private fun mocker() {
-        isCreate = false
-        initAdapter()
-        //模拟数据
-    }
 
     override fun newP(): ${presenterClass}? {
         return ${presenterClass}(this)

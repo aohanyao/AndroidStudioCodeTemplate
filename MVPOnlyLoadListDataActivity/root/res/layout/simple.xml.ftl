@@ -6,8 +6,13 @@
     style="@style/BaseRootLayoutStyle"
     android:id="@+id/${refreshLayout}"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/${appBarLayoutName}"
+    <#if modlueName?length gt 1>
+      tools:showIn="@layout/${appBarLayoutName}_${modlueName}"
+    <#else>
+      tools:showIn="@layout/${appBarLayoutName}"
+    </#if>
     tools:context="${packageName}.view.activity.${activityClass}">
+      <!--${activityTitle}CXML-->
     <android.support.v7.widget.RecyclerView
             android:id="@+id/${recyclerView}"
             android:layout_width="match_parent"

@@ -32,13 +32,6 @@ class ${activityClass} : MvpRequestDataBaseActivity<${presenterClass}, ${BeanCla
             setContentView(inflateView(R.layout.${layoutName}))
           </#if>
            showLoading()
-        <#if isImmersive>
-          //初始化线性变化的标题栏
-          initChangerToolbarGradientColor(R.color.colorPrimary)
-        <#else>
-            //初始化纯颜色的标题栏
-            initGeneralToolBar(R.color.colorPrimary)
-        </#if>
         p?.requestData(${ParamClass}())
     }
 
@@ -52,9 +45,5 @@ class ${activityClass} : MvpRequestDataBaseActivity<${presenterClass}, ${BeanCla
     }
 
     override fun onRetry() {
-            mockData()
-    }
-    private fun mockData() {
-
-    }
+    }   
 }

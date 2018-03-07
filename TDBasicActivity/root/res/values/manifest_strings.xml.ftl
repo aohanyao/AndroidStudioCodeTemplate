@@ -1,5 +1,7 @@
 <resources>
-<#if !isNewProject && (generateActivityTitle!true)>
-    <string name="title_${activityToLayout(activityClass)}">${escapeXmlString(activityTitle)}</string>
-</#if>
+    <#if modlueName?length gt 1>
+        <string name="title_${activityToLayout(activityClass)}_${modlueName}">${escapeXmlString(activityTitle)}</string>
+    <#else>
+        <string name="title_${activityToLayout(activityClass)}">${escapeXmlString(activityTitle)}</string>
+    </#if>
 </resources>
