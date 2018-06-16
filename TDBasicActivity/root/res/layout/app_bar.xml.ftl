@@ -32,9 +32,10 @@
                       android:text="@string/title_${activityToLayout(activityClass)}"
                       </#if>
                       />
+                      <include layout="@layout/layout_toolbar_line"/>
+                      
             </RelativeLayout>
 
-            <include layout="@layout/layout_toolbar_line"/>
         </android.support.design.widget.AppBarLayout>
 
         <!--${activityTitle}AXML-->

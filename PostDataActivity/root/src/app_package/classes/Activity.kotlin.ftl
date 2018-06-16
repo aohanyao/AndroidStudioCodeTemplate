@@ -1,10 +1,9 @@
 package ${packageName}.view.activity
 
 import android.os.Bundle
-import android.support.v7.widget.RecyclerView
 import android.view.View
-import com.chad.library.adapter.base.BaseQuickAdapter
-import com.td.framework.mvp.base.MvpLoadListDataBaseActivity
+import com.td.framework.mvp.base.MvpBaseActivity
+import com.td.framework.mvp.contract.PostContract
 <#if modlueName?length gt 1>
 import kotlinx.android.synthetic.main.${simpleLayoutName}_${modlueName}.*
 <#else>

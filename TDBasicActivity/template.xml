@@ -56,7 +56,7 @@
             suggest="${activityToLayout(activityClass)}"
             default="activity_main"
             help="The name of the layout to create for the activity"/>
-   
+
     <parameter
             id="activityTitle"
             name="Title"
@@ -113,6 +113,12 @@
             default="content_main"
             visibility="false"
             help="The name of the App Bar layout to create for the activity"/>
+            <parameter
+                    id="modlueName"
+                    name="Modlue Name"
+                    type="string"
+                    default=""
+                    help="模块名称，主要用来创建资源的时候命名。"/>
 
     <parameter
             id="parentActivityClass"

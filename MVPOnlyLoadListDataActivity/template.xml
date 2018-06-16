@@ -2,7 +2,7 @@
 <template
     format="2"
     revision="2"
-    name="MVP List Data Activity"
+    name="List Data Activity"
     minApi="7"
     minBuildApi="14"
     description="专门用来加载列表数据的MVP Activity">
@@ -80,7 +80,7 @@
         name="参数包名"
         type="string"
         constraints="package"
-        default="com.yida.cloud.client.model.param"
+        default="com.yida.cloud.merchants.entity.param"
         help="参数包名" />
 
 
@@ -109,7 +109,7 @@
         type="string"
         constraints="package"
         help="实体类存放的位置"
-        default="com.yida.cloud.client.model.bean" />
+        default="com.yida.cloud.merchants.entity.bean" />
         <!-- 实体类存放的位置-->
 
 
@@ -137,7 +137,7 @@
         default="list_${classToResource(activityClass)}"
         help="适配器item布局名称" />
 
-   
+
       <parameter
           id="refreshLayout"
           name="刷新布局ID"

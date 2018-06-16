@@ -2,10 +2,10 @@
 <template
     format="2"
     revision="2"
-    name="Post Data Fragment"
+    name="TD Basic Fragment"
     minApi="7"
     minBuildApi="14"
-    description="Post Data MVP Fragment">
+    description="TD Basic Fragment">
 
     <category value="MVP Fragment" />
     <formfactor value="Mobile" />
@@ -35,7 +35,7 @@
             constraints="nonempty"
             default="MainActivity"
             suggest="${fragmentClass}"
-            help="Fragment title or description"/>
+            help="Fragment 的描述，写中文"/>
 
     <parameter
         id="packageName"
@@ -45,41 +45,12 @@
         default="com.mycompany.myapp" />
 
 
-
-    <parameter
-        id="presenterClass"
-        name="Presenter Name"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainPresenter"
-        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Presenter"
-        help="Presenter Name" />
-
-
-    <parameter
-        id="ParamClass"
-        name="Param Class"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainParam"
-        suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Param"
-        help="Param Class" />
-
-    <parameter
-        id="ParamPackageName"
-        name="Param Package Name"
-        type="string"
-        constraints="package"
-        default="com.yida.cloud.merchants.entity.param"
-        help="create in the package" />
-
         <parameter
                 id="modlueName"
                 name="Modlue Name"
                 type="string"
                 default=""
                 help="模块名称，主要用来创建资源的时候命名。"/>
-
 
 
 

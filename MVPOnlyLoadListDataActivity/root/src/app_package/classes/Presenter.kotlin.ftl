@@ -6,6 +6,7 @@ import com.td.framework.mvp.presenter.LoadDataListPresenter
 import ${ParamPackageName}.${ParamClass}
 import ${BeanPackageName}.${BeanClass}
 import io.reactivex.Flowable
+import java.util.concurrent.TimeUnit
 
 /**
  * Created on ${.now}
@@ -22,6 +23,24 @@ class  ${presenterClass}(view: GeneralLoadDataContract.GeneralLoadDataView<${Bea
          *pageSize --> 页大小
          *mPagerIndex --> 当前页码
          */
-        return null
+        //-----------------------------模拟数据---------------------------------
+        return Flowable.timer(2, TimeUnit.SECONDS)
+                .map {
+                    object : ListDataModel<${BeanClass}> {
+                        override val maxPage: Int
+                            get() = 1
+                        override val list: List<${BeanClass}>
+                            get() = arrayListOf<${BeanClass}>()
+                                    .apply {
+                                        add(${BeanClass}())
+                                        add(${BeanClass}())
+                                        add(${BeanClass}())
+                                        add(${BeanClass}())
+                                        add(${BeanClass}())
+                                        add(${BeanClass}())
+                                    }
+                    }
+                }
+        //-----------------------------模拟数据---------------------------------
     }
 }

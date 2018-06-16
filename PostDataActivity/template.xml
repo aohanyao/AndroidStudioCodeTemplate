@@ -80,7 +80,7 @@
         name="参数包名"
         type="string"
         constraints="package"
-        default="com.yida.cloud.client.model.param"
+        default="com.yida.cloud.merchants.entity.param"
         help="参数包名" />
 
           <parameter
