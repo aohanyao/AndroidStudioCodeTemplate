@@ -7,7 +7,7 @@ import ${BeanPackageName}.${BeanClass}
 
 /**
  * Created on ${.now}
- * @author: jc
+ * @author: ${USER}
  * @version:1.0
  * Description:${fragmentTitle}的适配器
  * ChangeLog:

@@ -1,10 +1,10 @@
 <#import "../../common/shared_manifest_macros.ftl" as manifestMacros>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="${packageName}">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
     <application>
         <activity android:name="${packageName}.view.activity.${activityClass}"
                     <#if modlueName?length gt 1>
-                  android:label="@string/title_${activityToLayout(activityClass)}_${modlueName}"
+                  android:label="@string/title_${modlueName}_${activityToLayout(activityClass)}"
                     <#else>
                   android:label="@string/title_${activityToLayout(activityClass)}"
                     </#if>

@@ -6,7 +6,7 @@ import com.td.framework.mvp.base.MvpBaseFragment
 import kotlinx.android.synthetic.main.${simpleLayoutName}.*
 /**
  * Created on ${.now}
- * @author: jc
+ * @author: ${USER}
  * @version:1.0
  * Description:${fragmentTitle}
  */

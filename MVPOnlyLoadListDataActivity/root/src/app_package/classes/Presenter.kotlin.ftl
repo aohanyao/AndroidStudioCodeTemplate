@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 
 /**
  * Created on ${.now}
- * @author: jc
+ * @author: ${DevloperName}
  * @version:1.0
  * Description:${activityTitle}的Presenter
  */

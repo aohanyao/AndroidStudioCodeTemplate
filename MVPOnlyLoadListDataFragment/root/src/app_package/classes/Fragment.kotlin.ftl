@@ -13,7 +13,7 @@ import ${ParamPackageName}.${ParamClass}
 import ${applicationPackage}.R
 /**
  * Created on ${.now}
- * @author: jc
+ * @author: ${USER}
  * @version:1.0
  * Description:${fragmentTitle}
  */

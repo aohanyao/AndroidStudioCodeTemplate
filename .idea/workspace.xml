@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f222123-4f35-46e3-b32e-1e3e327fea68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/activity_layout_recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/recipe_app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/recipe_list.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/recipe_manifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/recipe_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/AndroidManifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/res/layout/app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/res/layout/simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/res/values/manifest_strings.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/src/app_package/classes/Activity.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/src/app_package/classes/Bean.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/src/app_package/classes/ParamGet.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/src/app_package/classes/ParamPost.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetAndPostDataActivity/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/activity_layout_recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/recipe_app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/recipe_list.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/recipe_manifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/recipe_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/AndroidManifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/res/layout/app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/res/layout/simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/res/values/manifest_strings.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/src/app_package/classes/Activity.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/src/app_package/classes/Bean.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/src/app_package/classes/Param.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetDataActivity/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/root/res/layout/simple_layout.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/root/src/app_package/classes/Bean.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/root/src/app_package/classes/Fragment.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/root/src/app_package/classes/Param.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPGetFragment/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/activity_layout_recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/recipe_app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/recipe_list.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/recipe_manifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/recipe_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/AndroidManifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/dimens.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/res/layout/app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/res/layout/list.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/res/layout/simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/res/values/manifest_strings.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/src/app_package/classes/Activity.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/src/app_package/classes/Adapter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/src/app_package/classes/Bean.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/src/app_package/classes/Param.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataActivity/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/activity_layout_recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/recipe_list.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/recipe_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/res/layout/list.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/res/layout/simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/src/app_package/classes/Adapter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/src/app_package/classes/Bean.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/src/app_package/classes/Fragment.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/src/app_package/classes/Param.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVPOnlyLoadListDataFragment/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/recipe_app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/recipe_manifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/recipe_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/AndroidManifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/res/layout/app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/res/layout/simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/res/values/manifest_strings.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/src/app_package/classes/Activity.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/src/app_package/classes/Param.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostDataActivity/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/root/res/layout/simple_layout.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/root/src/app_package/classes/Fragment.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/root/src/app_package/classes/Param.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/root/src/app_package/classes/Presenter.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostFragment/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/common_globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/recipe_app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/recipe_dummy_content.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/recipe_manifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/recipe_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/AndroidManifest.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/res/layout/activity_fragment_container.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/res/layout/app_bar.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/res/layout/fragment_simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/res/layout/simple.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/res/values/manifest_strings.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/src/app_package/SimpleActivity.java.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/src/app_package/SimpleActivity.kt.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/src/app_package/SimpleActivityFragment.java.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/root/src/app_package/SimpleActivityFragment.kt.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/shared_manifest_macros.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/template_basic_activity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicActivity/template_basic_activity_fragment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicFragment/globals.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicFragment/recipe.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicFragment/root/res/layout/simple_layout.xml.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicFragment/root/src/app_package/classes/Fragment.kotlin.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDBasicFragment/template.xml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Android/MVPOnlyLoadListDataActivity/root/res/layout/app_bar.xml.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="MVPOnlyLoadListDataActivity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="MVPOnlyLoadListDataActivity" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="MVPOnlyLoadListDataActivity" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="MVPOnlyLoadListDataActivity" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="MVPOnlyLoadListDataActivity" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidStudioCodeTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidStudioCodeTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="MVPOnlyLoadListDataActivity" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app_package" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f222123-4f35-46e3-b32e-1e3e327fea68" name="Default Changelist" comment="" />
+      <created>1557474249622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557474249622</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.16842847" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Android/MVPOnlyLoadListDataActivity/root/res/layout/app_bar.xml.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

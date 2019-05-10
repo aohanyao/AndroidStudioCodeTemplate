@@ -10,6 +10,23 @@
     <category value="MVP Activity" />
     <formfactor value="Mobile" />
 
+<parameter
+            id="isAndroidX"
+            name="是否使用AndroidX"
+            type="boolean"
+            default="true"
+            help="如果使用AndroidX的话，会将相应的support包替换为AndroidX"/>
+
+
+
+<parameter
+        id="DevloperName"
+        name="开发人员姓名"
+        type="string"
+        suggest=""
+        default=""
+        help="填入你的名字，将会出现在文件的注释中" />
+
     <parameter
         id="activityClass"
         name="Activity名称"
@@ -36,7 +53,7 @@
             constraints="nonempty"
             default="MainActivity"
             suggest="${activityClass}"
-            help="Activity的标题"/>
+            help="Activity的标题,这将会出现在相关的文件中，请使用中文！"/>
 
     <parameter
         id="packageName"
@@ -142,15 +159,15 @@
           id="refreshLayout"
           name="刷新布局ID"
           type="string"
-          constraints="layout|unique|nonempty"
-          default="rl_${classToResource(activityClass)}"
+          constraints="unique|nonempty"
+          default="m${underscoreToCamelCase(classToResource(activityClass))}Rl"
           help="刷新布局ID" />
       <parameter
           id="recyclerView"
           name="RecyclerView ID"
           type="string"
-          constraints="layout|unique|nonempty"
-          default="rv_${classToResource(activityClass)}"
+          constraints="unique|nonempty"
+          default="m${underscoreToCamelCase(classToResource(activityClass))}Rv"
           help="RecyclerView ID" />
           <parameter
                   id="modlueName"

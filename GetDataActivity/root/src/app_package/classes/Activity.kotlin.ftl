@@ -16,7 +16,7 @@ import ${ParamPackageName}.${ParamClass}
 
 /**
  * Created on ${.now}
- * @author: jc
+ * @author: ${USER}
  * @version:1.0
  * Description:${activityTitle}Activity
  */

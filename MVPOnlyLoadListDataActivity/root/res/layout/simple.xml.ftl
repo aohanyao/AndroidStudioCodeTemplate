@@ -7,13 +7,17 @@
     android:id="@+id/${refreshLayout}"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     <#if modlueName?length gt 1>
-      tools:showIn="@layout/${appBarLayoutName}_${modlueName}"
+      tools:showIn="@layout/${modlueName}_${appBarLayoutName}"
     <#else>
       tools:showIn="@layout/${appBarLayoutName}"
     </#if>
     tools:context="${packageName}.view.activity.${activityClass}">
       <!--${activityTitle}CXML-->
-    <android.support.v7.widget.RecyclerView
+      <#if isAndroidX>
+<androidx.recyclerview.widget.RecyclerView
+       <#else>
+<android.support.v7.widget.RecyclerView
+</#if>
             android:id="@+id/${recyclerView}"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
