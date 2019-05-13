@@ -1,11 +1,19 @@
 package ${packageName}.view.fragment
 
 import android.os.Bundle
+ <#if isAndroidX>
+import androidx.recyclerview.widget.RecyclerView
+       <#else>
 import android.support.v7.widget.RecyclerView
+</#if>
 import android.view.View
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.td.framework.mvp.base.MvpLoadListDataBaseFragment
+<#if modlueName?length gt 1>
+  import kotlinx.android.synthetic.main.${modlueName}_${simpleLayoutName}.*
+<#else>
 import kotlinx.android.synthetic.main.${simpleLayoutName}.*
+</#if>
 import ${packageName}.presenter.${presenterClass}
 import ${packageName}.view.adapter.${AdapterClass}
 import ${BeanPackageName}.${BeanClass}
@@ -13,7 +21,7 @@ import ${ParamPackageName}.${ParamClass}
 import ${applicationPackage}.R
 /**
  * Created on ${.now}
- * @author: ${USER}
+ * @author: ${DevloperName}
  * @version:1.0
  * Description:${fragmentTitle}
  */
@@ -39,7 +47,7 @@ class ${fragmentClass} : MvpLoadListDataBaseFragment<${presenterClass}, ${BeanCl
 
     override fun getLayoutId(): Int {
       <#if modlueName?length gt 1>
-          return R.layout.${simpleLayoutName}_${modlueName}
+          return R.layout.${modlueName}_${layoutName}
       <#else>
           return R.layout.${simpleLayoutName}
       </#if>
