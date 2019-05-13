@@ -5,7 +5,7 @@
     name="Get Data Fragment"
     minApi="7"
     minBuildApi="14"
-    description="MVP Fragment">
+    description="MVP Get Data Fragment">
 
     <category value="MVP Fragment" />
     <formfactor value="Mobile" />
@@ -70,7 +70,13 @@
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Presenter"
         help="Presenter Name" />
 
-
+<parameter
+        id="BasePackageName"
+        name="基础包名：存放实体类的"
+        type="string"
+        constraints="package"
+        suggest="${packageName}"
+        default="com.mycompany.myapp" />
     <parameter
         id="ParamClass"
         name="Param Class"
@@ -82,14 +88,12 @@
 
     <parameter
         id="ParamPackageName"
-        name="Param Package Name"
+        name="参数包名"
         type="string"
         constraints="package"
+        suggest="${BasePackageName}.entity.param"
         default="com.yida.cloud.merchants.entity.param"
-        help="create in the package" />
-
-
-
+        help="参数包名" />
 
 
     <parameter
@@ -99,18 +103,18 @@
         constraints="class|nonempty|unique"
         default="MainBean"
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Bean"
-        help="Bean Name" />
+        help="数据实体类的名字" />
 
 
     <parameter
         id="BeanPackageName"
-        name="Bean package"
+        name="Bean package name"
         type="string"
         constraints="package"
-        help="Bean package"
+        help="实体类存放的位置"
+        suggest="${BasePackageName}.entity.bean"
         default="com.yida.cloud.merchants.entity.bean" />
         <!-- 实体类存放的位置-->
-
         <parameter
                 id="modlueName"
                 name="Modlue Name"

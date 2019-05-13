@@ -72,7 +72,13 @@
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Presenter"
         help="Presenter的名字" />
 
-
+<parameter
+        id="BasePackageName"
+        name="基础包名：存放实体类的"
+        type="string"
+        constraints="package"
+        suggest="${packageName}"
+        default="com.mycompany.myapp" />
     <parameter
         id="ParamClass"
         name="参数实体"
@@ -87,17 +93,9 @@
         name="参数包名"
         type="string"
         constraints="package"
+        suggest="${BasePackageName}.entity.param"
         default="com.yida.cloud.merchants.entity.param"
         help="参数包名" />
-
-
-
-
-
-
-
-
-
 
 
     <parameter
@@ -116,9 +114,9 @@
         type="string"
         constraints="package"
         help="实体类存放的位置"
+        suggest="${BasePackageName}.entity.bean"
         default="com.yida.cloud.merchants.entity.bean" />
         <!-- 实体类存放的位置-->
-
 
 
 

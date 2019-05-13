@@ -79,7 +79,13 @@
         default="MainPresenter"
         suggest="${underscoreToCamelCase(classToResource(activityClass))}Presenter"
         help="Presenter的名字" />
-
+<parameter
+        id="BasePackageName"
+        name="基础包名：存放实体类的"
+        type="string"
+        constraints="package"
+        suggest="${packageName}"
+        default="com.mycompany.myapp" />
 
     <parameter
         id="ParamClass"
@@ -87,6 +93,7 @@
         type="string"
         constraints="class|nonempty|unique"
         default="MainParam"
+        
         suggest="${underscoreToCamelCase(classToResource(activityClass))}Param"
         help="参数名字" />
 
@@ -95,6 +102,7 @@
         name="参数包名"
         type="string"
         constraints="package"
+        suggest="${BasePackageName}.entity.param"
         default="com.yida.cloud.merchants.entity.param"
         help="参数包名" />
 

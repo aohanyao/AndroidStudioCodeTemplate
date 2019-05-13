@@ -67,7 +67,13 @@
         default="MainPresenter"
         suggest="${underscoreToCamelCase(classToResource(fragmentClass))}Presenter"
         help="Presenter Name" />
-
+<parameter
+        id="BasePackageName"
+        name="基础包名：存放实体类的"
+        type="string"
+        constraints="package"
+        suggest="${packageName}"
+        default="com.mycompany.myapp" />
 
     <parameter
         id="ParamClass"
@@ -83,6 +89,7 @@
         name="Param Package Name"
         type="string"
         constraints="package"
+        suggest="${BasePackageName}.entity.param"
         default="com.yida.cloud.merchants.entity.param"
         help="create in the package" />
 
