@@ -2,11 +2,15 @@ package ${packageName}.view.fragment
 
 import android.os.Bundle
 import android.view.View
-import com.td.framework.mvp.base.MvpBaseFragment
+import com.td.framework.base.view.TDBaseFragment
+<#if modlueName?length gt 1>
+  import kotlinx.android.synthetic.main.${modlueName}_${simpleLayoutName}.*
+<#else>
 import kotlinx.android.synthetic.main.${simpleLayoutName}.*
+</#if>
 /**
  * Created on ${.now}
- * @author: ${USER}
+ * @author: ${DevloperName}
  * @version:1.0
  * Description:${fragmentTitle}
  */
@@ -16,7 +20,7 @@ class ${fragmentClass} : TDBaseFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         <#if modlueName?length gt 1>
-            return inflater.inflate(R.layout.${layoutName}_${modlueName}, container, false)
+            return inflater.inflate(R.layout.${modlueName}_${layoutName}, container, false)
         <#else>
             return inflater.inflate(R.layout.${layoutName}, container, false)
         </#if>

@@ -5,5 +5,5 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/BaseRootLayoutStyle"
     tools:context="${packageName}.view.fragment.${fragmentClass}">
-
+<!--${fragmentTitle}FX-->
 </LinearLayout>

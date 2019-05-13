@@ -3,7 +3,7 @@
 
   <#if modlueName?length gt 1>
   <instantiate from="res/layout/simple_layout.xml.ftl"
-               to="${escapeXmlAttribute(resOut)}/layout/${simpleLayoutName}_${modlueName}.xml" />
+               to="${escapeXmlAttribute(resOut)}/layout/${modlueName}_${simpleLayoutName}.xml" />
 
   <#else>
   <instantiate from="res/layout/simple_layout.xml.ftl"

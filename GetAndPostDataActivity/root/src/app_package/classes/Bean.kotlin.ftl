@@ -4,7 +4,7 @@ import java.io.Serializable
 
 /**
  * Created on ${.now}
- * @author: ${USER}
+ * @author: ${DevloperName}
  * @version:1.0
  * Description:${activityTitle}的实体类
  * ChangeLog:

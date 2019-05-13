@@ -8,7 +8,7 @@
                     android:label="@string/app_name"
                 <#else>
                     <#if modlueName?length gt 1>
-                      android:label="@string/title_${activityToLayout(activityClass)}_${modlueName}"
+                      android:label="@string/title_${modlueName}_${activityToLayout(activityClass)}"
                     <#else>
                       android:label="@string/title_${activityToLayout(activityClass)}"
                     </#if>

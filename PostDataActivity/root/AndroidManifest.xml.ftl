@@ -4,7 +4,7 @@
     <application>
          <#if modlueName?length gt 1>
               <activity android:name="${packageName}.view.activity.${activityClass}"
-                        android:label="@string/title_${activityToLayout(activityClass)}_${modlueName}"
+                        android:label="@string/title_${modlueName}_${activityToLayout(activityClass)}"
                         android:theme="@style/AppTheme.ToolbarHeight"/>
           <#else>
           <activity android:name="${packageName}.view.activity.${activityClass}"

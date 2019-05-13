@@ -2,19 +2,23 @@ package ${packageName}.view.fragment
 
 import android.os.Bundle
 import android.view.View
-import com.yida.cloud.merchants.provider.module.base.AppMvpLoadingFragment
+import com.td.framework.mvp.base.MvpBaseLoadingFragment
+<#if modlueName?length gt 1>
+  import kotlinx.android.synthetic.main.${modlueName}_${simpleLayoutName}.*
+<#else>
 import kotlinx.android.synthetic.main.${simpleLayoutName}.*
+</#if>
 import ${packageName}.presenter.${presenterClass}
 import ${BeanPackageName}.${BeanClass}
 import ${ParamPackageName}.${ParamClass}
 import ${applicationPackage}.R
 /**
  * Created on ${.now}
- * @author: ${USER}
+ * @author: ${DevloperName}
  * @version:1.0
  * Description:${fragmentTitle}
  */
-class ${fragmentClass}  : AppMvpLoadingFragment<${presenterClass}>(), GetContract.View<${BeanClass}> {
+class ${fragmentClass}  : MvpBaseLoadingFragment<${presenterClass}>(), GetContract.View<${BeanClass}> {
 
     /**
      * 参数对象
@@ -26,7 +30,7 @@ class ${fragmentClass}  : AppMvpLoadingFragment<${presenterClass}>(), GetContrac
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
       <#if modlueName?length gt 1>
-          val inflate = inflateView(R.layout.${simpleLayoutName}_${modlueName}, container)
+          val inflate = inflateView(R.layout.${modlueName}_${simpleLayoutName}, container)
       <#else>
           val inflate = inflateView(R.layout.${simpleLayoutName}, container)
       </#if>

@@ -17,7 +17,7 @@ import android.view.MenuItem;
 import ${applicationPackage}.R;
 </#if>
 /**
- * Created by ${USER} on ${.now}
+ * Created by ${DevloperName} on ${.now}
  * Ver : 1.0
  * name: ${activityTitle}Activity
  * desc: ${description}

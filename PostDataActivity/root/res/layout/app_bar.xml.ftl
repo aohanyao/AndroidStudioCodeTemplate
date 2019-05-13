@@ -1,6 +1,11 @@
 <#import "../values/manifest_strings.xml.ftl" as manifestMacros>
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+
+<#if isAndroidX>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout           
+<#else>
+    <android.support.design.widget.CoordinatorLayout
+</#if>
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +13,12 @@
     android:layout_height="match_parent"
     tools:context="${packageName}.view.activity.${activityClass}">
   <#-- 将一些东西替换成了 自己的页面  样式等 -->
-    <android.support.design.widget.AppBarLayout
+  
+<#if isAndroidX>
+<com.google.android.material.appbar.AppBarLayout
+       <#else>
+<android.support.design.widget.AppBarLayout 
+</#if>
             style="@style/AppBarLayoutStyle"
             app:elevation="@dimen/elevation_somthing">
 
@@ -16,7 +26,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <android.support.v7.widget.Toolbar
+<#if isAndroidX>
+<androidx.appcompat.widget.Toolbar
+<#else>
+ <android.support.v7.widget.Toolbar
+</#if>
+                
                     style="@style/BaseToolbarStyle"
                     app:popupTheme="@style/AppTheme.PopupOverlay" />
 
@@ -27,24 +42,32 @@
                   <TextView
                       style="@style/ToolBarTitleStyle"
                       <#if modlueName?length gt 1>
-                      android:text="@string/title_${activityToLayout(activityClass)}_${modlueName}"
+                      android:text="@string/title_${modlueName}_${activityToLayout(activityClass)}"
                       <#else>
                       android:text="@string/title_${activityToLayout(activityClass)}"
                       </#if>
                       />
                       <include layout="@layout/layout_toolbar_line"/>
-                      
+
             </RelativeLayout>
 
-        </android.support.design.widget.AppBarLayout>
+        <#if isAndroidX>
+</com.google.android.material.appbar.AppBarLayout>
+       <#else>
+</android.support.design.widget.AppBarLayout> 
+</#if>
 
 
         <#if modlueName?length gt 1>
-        <include layout="@layout/${simpleLayoutName}_${modlueName}"/>
+        <include layout="@layout/${modlueName}_${simpleLayoutName}"/>
 
         <#else>
         <include layout="@layout/${simpleLayoutName}"/>
         </#if>
+  <!--${activityTitle}AXML-->
 
-
+<#if isAndroidX>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>           
+<#else>
 </android.support.design.widget.CoordinatorLayout>
+</#if>

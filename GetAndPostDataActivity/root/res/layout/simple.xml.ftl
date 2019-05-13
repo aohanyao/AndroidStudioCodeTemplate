@@ -6,7 +6,7 @@
     style="@style/BaseRootLayoutStyle"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
       <#if modlueName?length gt 1>
-    tools:showIn="@layout/${appBarLayoutName}_${modlueName}"
+    tools:showIn="@layout/${modlueName}_${appBarLayoutName}"
       <#else>
     tools:showIn="@layout/${appBarLayoutName}"
       </#if>

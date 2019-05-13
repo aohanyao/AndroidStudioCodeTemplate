@@ -9,7 +9,22 @@
 
     <category value="MVP Fragment" />
     <formfactor value="Mobile" />
+<parameter
+            id="isAndroidX"
+            name="是否使用AndroidX"
+            type="boolean"
+            default="true"
+            help="如果使用AndroidX的话，会将相应的support包替换为AndroidX"/>
 
+
+
+<parameter
+        id="DevloperName"
+        name="开发人员姓名"
+        type="string"
+        suggest=""
+        default=""
+        help="填入你的名字，将会出现在文件的注释中" />
     <parameter
         id="fragmentClass"
         name="Fragment Name"
