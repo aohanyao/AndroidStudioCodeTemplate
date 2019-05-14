@@ -47,7 +47,7 @@ class ${activityClass}  : MvpLoadingActivity<${presenterClass}>(), PostAndGetCon
   }
 
 
-    override fun getDataSuccess(responseData: ${BeanClass?}) {
+    override fun getDataSuccess(responseData: ${BeanClass}?) {
         //获取数据成功
         showContent()
     }
