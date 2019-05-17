@@ -30,7 +30,11 @@ class ${activityClass} : TDBaseActivity()  <#-- 继承自己的基类 --> {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-          setContentView(R.layout.${layoutName})
+          <#if modlueName?length gt 1>
+            setContentView(R.layout.${modlueName}_${layoutName})
+          <#else>
+            setContentView(R.layout.${layoutName})
+          </#if>
 
 
 <#if parentActivityClass?has_content>
@@ -39,22 +43,6 @@ class ${activityClass} : TDBaseActivity()  <#-- 继承自己的基类 --> {
 <#include "../../../../common/jni_code_usage.kt.ftl">
     }
 
-<#if isNewProject>
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.${menuName}, menu)
-        return true
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when(item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-</#if>
 <#include "../../../../common/jni_code_snippet.kt.ftl">
 }
